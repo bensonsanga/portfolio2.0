@@ -9916,20 +9916,6 @@ textarea.form-control {
 
 
 
-
-/*solution for scrolling owl*/
-
-
-
-.owl-carousel, .owl-item{
-  -ms-touch-action: auto;
-      touch-action: auto;
-}
-
-
-
-
-
 /*
 body.light{
   
