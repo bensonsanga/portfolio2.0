@@ -16,7 +16,7 @@
                 <span class="subheading">Hello!</span>
                 <h1 class="mb-4 mt-3">I'm <span>Benson Sanga</span></h1>
                 <h2 class="mb-4">An Architect</h2>
-                <p><a href="#" class="btn btn-primary py-3 px-4">Hire me</a> <a href="#" class="btn btn-white btn-outline-white py-3 px-4">My works</a></p>
+                <p><a href="{{ url_for('about') }}" class="btn btn-primary py-3 px-4">Hire me</a> <a href="{{ url_for('about') }}" class="btn btn-white btn-outline-white py-3 px-4">My works</a></p>
               </div>
             </div>
           </div>
@@ -39,7 +39,7 @@
               <div class="text">
                 <span class="subheading">Hello!</span>
                 <h1 class="mb-4 mt-3">I'm an <span>Architect</span> based in Tanzania</h1>
-                <p><a href="#" class="btn btn-primary py-3 px-4">Hire me</a> <a href="#" class="btn btn-white btn-outline-white py-3 px-4">My works</a></p>
+                <p><a href="{{ url_for('about') }}" class="btn btn-primary py-3 px-4">Hire me</a> <a href="{{ url_for('about') }}" class="btn btn-white btn-outline-white py-3 px-4">My works</a></p>
               </div>
             </div>
           </div>
@@ -156,7 +156,7 @@
       </div>
       <div class="row">
         <div class="col-md-4 text-center d-flex ftco-animate">
-          <a href="#" class="services-1">
+          <a href="{{ url_for('about') }}" class="services-1">
             <span class="icon">
               <i class="flaticon-analysis"></i>
             </span>
@@ -166,7 +166,7 @@
           </a>
         </div>
         <div class="col-md-4 text-center d-flex ftco-animate">
-          <a href="#" class="services-1">
+          <a href="{{ url_for('about') }}" class="services-1">
             <span class="icon">
               <i class="flaticon-flasks"></i>
             </span>
@@ -176,7 +176,7 @@
           </a>
         </div>
         <div class="col-md-4 text-center d-flex ftco-animate">
-          <a href="#" class="services-1">
+          <a href="{{ url_for('about') }}" class="services-1">
             <span class="icon">
               <i class="flaticon-ideas"></i>
             </span>
@@ -285,7 +285,7 @@
           <div class="project img ftco-animate d-flex justify-content-center align-items-center" style='background-image:url("{{ url_for("static", filename="images/project-4.jpg") }}");'>
             <div class="overlay"></div>
             <div class="text text-center p-4">
-              <h3><a href="#">Branding &amp; Illustration Design</a></h3>
+              <h3><a href="{{ url_for('about') }}">Branding &amp; Illustration Design</a></h3>
               <span>Web Design</span>
             </div>
           </div>
@@ -294,7 +294,7 @@
           <div class="project img ftco-animate d-flex justify-content-center align-items-center" style='background-image:url("{{ url_for("static", filename="images/project-5.jpg") }}");'>
             <div class="overlay"></div>
             <div class="text text-center p-4">
-              <h3><a href="#">Branding &amp; Illustration Design</a></h3>
+              <h3><a href="{{ url_for('about') }}">Branding &amp; Illustration Design</a></h3>
               <span>Web Design</span>
             </div>
           </div>
@@ -304,7 +304,7 @@
           <div class="project img ftco-animate d-flex justify-content-center align-items-center"  style='background-image:url("{{ url_for("static", filename="images/project-1.jpg") }}");'>
             <div class="overlay"></div>
             <div class="text text-center p-4">
-              <h3><a href="#">Branding &amp; Illustration Design</a></h3>
+              <h3><a href="{{ url_for('about') }}">Branding &amp; Illustration Design</a></h3>
               <span>Web Design</span>
             </div>
           </div>
@@ -312,7 +312,7 @@
           <div class="project img ftco-animate d-flex justify-content-center align-items-center" style='background-image:url("{{ url_for("static", filename="images/project-6.jpg") }}");'>
             <div class="overlay"></div>
             <div class="text text-center p-4">
-              <h3><a href="#">Branding &amp; Illustration Design</a></h3>
+              <h3><a href="{{ url_for('about') }}">Branding &amp; Illustration Design</a></h3>
               <span>Web Design</span>
             </div>
           </div>
@@ -323,7 +323,7 @@
               <div class="project img ftco-animate d-flex justify-content-center align-items-center" style='background-image:url("{{ url_for("static", filename="images/project-2.jpg") }}");'>>
                 <div class="overlay"></div>
                 <div class="text text-center p-4">
-                  <h3><a href="#">Branding &amp; Illustration Design</a></h3>
+                  <h3><a href="{{ url_for('about') }}">Branding &amp; Illustration Design</a></h3>
                   <span>Web Design</span>
                 </div>
               </div>
@@ -332,7 +332,7 @@
               <div class="project img ftco-animate d-flex justify-content-center align-items-center" style='background-image:url("{{ url_for("static", filename="images/project-3.jpg") }}");'>
                 <div class="overlay"></div>
                 <div class="text text-center p-4">
-                  <h3><a href="#">Branding &amp; Illustration Design</a></h3>
+                  <h3><a href="{{ url_for('about') }}">Branding &amp; Illustration Design</a></h3>
                   <span>Web Design</span>
                 </div>
               </div>
@@ -362,8 +362,8 @@
               <div class="d-flex align-items-center mb-3 meta">
                 <p class="mb-0">
                   <span class="mr-2">June 21, 2019</span>
-                  <a href="#" class="mr-2">Benson</a>
-                  <a href="#" class="meta-chat"><span class="icon-chat"></span> 21</a>
+                  <a href="{{ url_for('about') }}" class="mr-2">Benson</a>
+                  <a href="{{ url_for('about') }}" class="meta-chat"><span class="icon-chat"></span> 21</a>
                 </p>
               </div>
               <h3 class="heading"><a href="single.html">Why designers should learn code</a></h3>
@@ -379,8 +379,8 @@
               <div class="d-flex align-items-center mb-3 meta">
                 <p class="mb-0">
                   <span class="mr-2">April 21, 2019</span>
-                  <a href="#" class="mr-2">Benson</a>
-                  <a href="#" class="meta-chat"><span class="icon-chat"></span> 3</a>
+                  <a href="{{ url_for('about') }}" class="mr-2">Benson</a>
+                  <a href="{{ url_for('about') }}" class="meta-chat"><span class="icon-chat"></span> 3</a>
                 </p>
               </div>
               <h3 class="heading"><a href="single.html">What do computer mean for the future of design</a></h3>
@@ -396,8 +396,8 @@
               <div class="d-flex align-items-center mb-3 meta">
                 <p class="mb-0">
                   <span class="mr-2">June 15, 2018</span>
-                  <a href="#" class="mr-2">Benson</a>
-                  <a href="#" class="meta-chat"><span class="icon-chat"></span> 3</a>
+                  <a href="{{ url_for('about') }}" class="mr-2">Benson</a>
+                  <a href="{{ url_for('about') }}" class="meta-chat"><span class="icon-chat"></span> 3</a>
                 </p>
               </div>
               <h3 class="heading"><a href="single.html">My minimal working setup (Tools)</a></h3>
@@ -454,7 +454,7 @@
         <div class="col-md-7 ftco-animate text-center">
           <h2>I'm <span>Available</span> for freelancing</h2>
           <p>Thanks for checking out my site and I would like to work with you sometime</p>
-          <p class="mb-0"><a href="#" class="btn btn-primary py-3 px-5">Hire me</a></p>
+          <p class="mb-0"><a href="{{ url_for('about') }}" class="btn btn-primary py-3 px-5">Hire me</a></p>
         </div>
       </div>
     </div>
@@ -504,7 +504,7 @@
               <span class="icon-globe"></span>
             </div>
             <h3 class="mb-4">Website</h3>
-            <p><a href="#">bensonad.pro</a></p>
+            <p><a href="{{ url_for('about') }}">bensonad.pro</a></p>
           </div>
         </div>
       </div>
@@ -547,9 +547,9 @@
             <h2 class="ftco-heading-2">About</h2>
             <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
             <ul class="ftco-footer-social list-unstyled float-md-left float-lft mt-5">
-              <li class="ftco-animate"><a href="#"><span class="icon-twitter"></span></a></li>
-              <li class="ftco-animate"><a href="#"><span class="icon-facebook"></span></a></li>
-              <li class="ftco-animate"><a href="#"><span class="icon-instagram"></span></a></li>
+              <li class="ftco-animate"><a href="{{ url_for('about') }}"><span class="icon-twitter"></span></a></li>
+              <li class="ftco-animate"><a href="{{ url_for('about') }}"><span class="icon-facebook"></span></a></li>
+              <li class="ftco-animate"><a href="{{ url_for('about') }}"><span class="icon-instagram"></span></a></li>
             </ul>
           </div>
         </div>
@@ -557,11 +557,11 @@
           <div class="ftco-footer-widget mb-4 ml-md-4">
             <h2 class="ftco-heading-2">Links</h2>
             <ul class="list-unstyled">
-              <li><a href="#"><span class="icon-long-arrow-right mr-2"></span>Home</a></li>
-              <li><a href="#"><span class="icon-long-arrow-right mr-2"></span>About</a></li>
-              <li><a href="#"><span class="icon-long-arrow-right mr-2"></span>Services</a></li>
-              <li><a href="#"><span class="icon-long-arrow-right mr-2"></span>Projects</a></li>
-              <li><a href="#"><span class="icon-long-arrow-right mr-2"></span>Contact</a></li>
+              <li><a href="{{ url_for('about') }}"><span class="icon-long-arrow-right mr-2"></span>Home</a></li>
+              <li><a href="{{ url_for('about') }}"><span class="icon-long-arrow-right mr-2"></span>About</a></li>
+              <li><a href="{{ url_for('about') }}"><span class="icon-long-arrow-right mr-2"></span>Services</a></li>
+              <li><a href="{{ url_for('about') }}"><span class="icon-long-arrow-right mr-2"></span>Projects</a></li>
+              <li><a href="{{ url_for('about') }}"><span class="icon-long-arrow-right mr-2"></span>Contact</a></li>
             </ul>
           </div>
         </div> 
@@ -569,11 +569,11 @@
           <div class="ftco-footer-widget mb-4">
             <h2 class="ftco-heading-2">Services</h2>
             <ul class="list-unstyled">
-              <li><a href="#"><span class="icon-long-arrow-right mr-2"></span>Web Design</a></li>
-              <li><a href="#"><span class="icon-long-arrow-right mr-2"></span>Web Development</a></li>
-              <li><a href="#"><span class="icon-long-arrow-right mr-2"></span>Business Strategy</a></li>
-              <li><a href="#"><span class="icon-long-arrow-right mr-2"></span>Data Analysis</a></li>
-              <li><a href="#"><span class="icon-long-arrow-right mr-2"></span>Graphic Design</a></li>
+              <li><a href="{{ url_for('about') }}"><span class="icon-long-arrow-right mr-2"></span>Web Design</a></li>
+              <li><a href="{{ url_for('about') }}"><span class="icon-long-arrow-right mr-2"></span>Web Development</a></li>
+              <li><a href="{{ url_for('about') }}"><span class="icon-long-arrow-right mr-2"></span>Business Strategy</a></li>
+              <li><a href="{{ url_for('about') }}"><span class="icon-long-arrow-right mr-2"></span>Data Analysis</a></li>
+              <li><a href="{{ url_for('about') }}"><span class="icon-long-arrow-right mr-2"></span>Graphic Design</a></li>
             </ul>
           </div>
         </div>
@@ -583,8 +583,8 @@
             <div class="block-23 mb-3">
               <ul>
                 <li><span class="icon icon-map-marker"></span><span class="text">203 Fake St. Mountain View, San Francisco, California, USA</span></li>
-                <li><a href="#"><span class="icon icon-phone"></span><span class="text">+2 392 3929 210</span></a></li>
-                <li><a href="#"><span class="icon icon-envelope"></span><span class="text">info@yourdomain.com</span></a></li>
+                <li><a href="{{ url_for('about') }}"><span class="icon icon-phone"></span><span class="text">+2 392 3929 210</span></a></li>
+                <li><a href="{{ url_for('about') }}"><span class="icon icon-envelope"></span><span class="text">info@yourdomain.com</span></a></li>
               </ul>
             </div>
           </div>
