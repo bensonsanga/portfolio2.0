@@ -38,7 +38,7 @@ def index():
     return render_template('index.html', title='Index')
 
 
-@app.route("/arcard")
+@app.route("/ar")
 def arcard():
     return render_template('arcard.html', title='AR Card')
 
