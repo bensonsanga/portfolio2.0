@@ -8618,8 +8618,20 @@ h1, h2, h3, h4, h5,
         .owl-carousel.home-slider .owl-dots .owl-dot.active {
           background: #fff; }
 
+/*solution for scrolling owl*/
+
+
+
+.owl-carousel .owl-stage, .owl-carousel.owl-drag .owl-item{
+  -ms-touch-action: auto;
+      touch-action: auto;
+}
+
+
+
+
 .hero-wrap {
-  width: 100%;
+  width: 100%;s
   height: 100%;
   position: inherit;
   background-size: cover;
