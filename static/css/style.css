@@ -9913,6 +9913,10 @@ textarea.form-control {
 }
 
 
+/* custom css for owl issue*/
+.owl-carousel.owl-drag .owl-item {
+  touch-action: pan-y;
+}
 
 
 
