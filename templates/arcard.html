@@ -5,15 +5,11 @@
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
 		<link type="text/css" rel="stylesheet" href="main.css">
+		<link rel="shortcut icon" type="image/x-icon" href="{{ url_for('static', filename='logo128.png') }}" />
 	</head>
 
 	<body>
-		<div id="info">
-			<a href="http://threejs.org" target="_blank" rel="noopener">three.js</a> - GLTFLoader<br />
-			Battle Damaged Sci-fi Helmet by
-			<a href="https://sketchfab.com/theblueturtle_" target="_blank" rel="noopener">theblueturtle_</a><br />
-			<a href="https://hdrihaven.com/hdri/?h=royal_esplanade" target="_blank" rel="noopener">Royal Esplanade</a> by <a href="https://hdrihaven.com/" target="_blank" rel="noopener">HDRI Haven</a>
-		</div>
+		<div id="info">		</div>
 
 		<script type="module">
 			import * as THREE from 'https://threejs.org/build/three.module.js';
@@ -42,7 +38,7 @@
 						scene.environment = envMap;
 						// model
 						var roughnessMipmapper = new RoughnessMipmapper( renderer );
-						var loader = new GLTFLoader().setPath( "{{ url_for('static', filename='modelmodels/glTF') }}" );
+						var loader = new GLTFLoader().setPath( 'https://threejs.org/examples/models/gltf/DamagedHelmet/glTF/' );
 						loader.load( 'DamagedHelmet.gltf', function ( gltf ) {
 							gltf.scene.traverse( function ( child ) {
 								if ( child.isMesh ) {
