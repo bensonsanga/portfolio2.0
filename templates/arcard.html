@@ -4,6 +4,7 @@
 		<title>three.js webgl - glTF loader</title>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+		<link type="text/css" rel="stylesheet" href="main.css">
 	</head>
 
 	<body>
@@ -15,7 +16,7 @@
 		</div>
 
 		<script type="module">
-			import * as THREE from 'https://unpkg.com/three@0.87.1/build/three.module.js';
+			import * as THREE from 'https://threejs.org/build/three.module.js';
 			import Stats from 'https://threejs.org/examples/jsm/libs/stats.module.js';
 			import { OrbitControls } from 'https://threejs.org/examples/jsm/controls/OrbitControls.js';
 			import { GLTFLoader } from 'https://threejs.org/examples/jsm/loaders/GLTFLoader.js';
@@ -33,7 +34,7 @@
 				scene = new THREE.Scene();
 				new RGBELoader()
 					.setDataType( THREE.UnsignedByteType )
-					.setPath( "{{ url_for('static', filename='textures/equirectangular/') }}" )
+					.setPath( 'https://threejs.org/examples/textures/equirectangular/' )
 					.load( 'royal_esplanade_1k.hdr', function ( texture ) {
 						var envMap = pmremGenerator.fromEquirectangular( texture ).texture;
 						pmremGenerator.dispose();
@@ -41,7 +42,7 @@
 						scene.environment = envMap;
 						// model
 						var roughnessMipmapper = new RoughnessMipmapper( renderer );
-						var loader = new GLTFLoader().setPath( "{{ url_for('static', filename='models/gltf/DamagedHelmet/glTF/') }}" );
+						var loader = new GLTFLoader().setPath( "{{ url_for('static', filename='modelmodels/glTF') }}" );
 						loader.load( 'DamagedHelmet.gltf', function ( gltf ) {
 							gltf.scene.traverse( function ( child ) {
 								if ( child.isMesh ) {
