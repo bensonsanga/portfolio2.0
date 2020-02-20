@@ -26,27 +26,29 @@ def home():
 def about():
     return render_template('about.html', title='About')
 
+@app.route("/Project1")
+def Project1():
+    return render_template('Project1.html', title='Project1')
 
-@app.route("/stories")
-def stories():
-    return render_template('Stories.html', title='Stories')
+@app.route("/Project2")
+def Project2():
+    return render_template('Project2.html', title='Project2')
 
+@app.route("/Project3")
+def Project3():
+    return render_template('Project3.html', title='Project3')
 
+@app.route("/Project4")
+def Project4():
+    return render_template('Project4.html', title='Project4')
 
-@app.route("/index")
-def index():
-    return render_template('index.html', title='Index')
+@app.route("/Project5")
+def Project5():
+    return render_template('Project5.html', title='Project5')
 
-
-@app.route("/ar")
-def arcard():
-    return render_template('arcard.html', title='AR Card')
-
-
-@app.route("/slides")
-def slides():
-    return render_template('Slides/index.html', title='AR Card')
-
+@app.route("/Project6")
+def Project6():
+    return render_template('Project6.html', title='Project6')
 
 if __name__ == '__main__':
     app.run(debug=True)
