@@ -27,8 +27,9 @@ def about():
     return render_template('about.html', title='About')
 
 @app.route("/Project1")
+@app.route("/Cultural_Center")
 def Project1():
-    return render_template('Project1.html', title='Project1')
+    return render_template('Cultural_Center.html', title='Project1')
 
 @app.route("/Project2")
 def Project2():
