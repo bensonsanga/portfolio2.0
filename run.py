@@ -26,30 +26,29 @@ def home():
 def about():
     return render_template('about.html', title='About')
 
-@app.route("/Project1")
 @app.route("/Cultural_Center")
-def Project1():
-    return render_template('Cultural_Center.html', title='Project1')
+def Cultural_Center():
+    return render_template('Cultural_Center.html', title='Cultural_Center')
 
-@app.route("/Project2")
-def Project2():
-    return render_template('Project2.html', title='Project2')
+@app.route("/Technocity")
+def Technocity():
+    return render_template('Technocity.html', title='Technocity')
 
-@app.route("/Project3")
-def Project3():
-    return render_template('Project3.html', title='Project3')
+@app.route("/Community_Center")
+def Community_Center():
+    return render_template('Community_Center.html', title='Community_Center')
 
-@app.route("/Project4")
-def Project4():
-    return render_template('Project4.html', title='Project4')
+@app.route("/Kindergartten")
+def Kindergartten():
+    return render_template('Kindergartten.html', title='Kindergartten')
 
-@app.route("/Project5")
-def Project5():
-    return render_template('Project5.html', title='Project5')
+@app.route("/Exhibiton_Design")
+def Exhibiton_Design():
+    return render_template('Exhibiton_Design.html', title='Exhibiton_Design')
 
-@app.route("/Project6")
-def Project6():
-    return render_template('Project6.html', title='Project6')
+@app.route("/Social_Hub")
+def Social_Hub():
+    return render_template('Social_Hub.html', title='Social_Hub')
 
 if __name__ == '__main__':
     app.run(debug=True)
