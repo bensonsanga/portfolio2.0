@@ -22,7 +22,10 @@
             <h2 class="mb-3">First place ITU design together competition 2020</h2>
             <p>The project was done as part of competion hosted by ITU university department of Civil engineering. My role in the project was as an architect. I wrked with a team to come up with the project. In a period of ten weeks we were able to do the project to completion using BIM software and other collaboration tools like BIM 360. The team had One architect, three civil engineers and one mechanical engineer</p>
             <p>
-              <style>.embed-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; } .embed-container iframe, .embed-container object, .embed-container embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }</style><div class='embed-container'><iframe src='https://player.vimeo.com/video/409559979' frameborder='0' webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe></div>
+              <div class="Video ta:c">
+                <video class="img-fluid" class="Video-item" id="video-item" autobuffer preload muted type="video/mp4" src="https://static.sonos.com/video/DWkxIB9kJ7Wu7RWrEHR7.mp4">
+                </video>
+              </div>
             </p>
             <p>Design together is a yearly competition where students have to come together from different disciplines from architecture and engineering and try to design together using concepts like BIM and integrated design approaches. We design theis project and won first place in design together bim competition 2020 hosted by Istanbul Technical University</p>
             <h2 class="mb-3 mt-5">The design approach</h2>
@@ -275,22 +278,65 @@
 
   <!-- loader -->
   <div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00"/></svg></div>
-
-
-  <script src="js/jquery.min.js"></script>
-  <script src="js/jquery-migrate-3.0.1.min.js"></script>
-  <script src="js/popper.min.js"></script>
-  <script src="js/bootstrap.min.js"></script>
-  <script src="js/jquery.easing.1.3.js"></script>
-  <script src="js/jquery.waypoints.min.js"></script>
-  <script src="js/jquery.stellar.min.js"></script>
-  <script src="js/owl.carousel.min.js"></script>
-  <script src="js/jquery.magnific-popup.min.js"></script>
-  <script src="js/aos.js"></script>
-  <script src="js/jquery.animateNumber.min.js"></script>
-  <script src="js/scrollax.min.js"></script>
   
-  <script src="js/main.js"></script>
+  <script>/*! scroll-video | v0.0.1 */
+
+    (function () {
+    
+      'use strict';
+    
+      /**
+       * Helper functions
+       *
+       * ready: Wait until the DOM is ready before executing code.
+       * render: Render the view with rAF on specified event.
+       */
+    
+      // Ready:
+      var ready=function(e){if("function"==typeof e)return"interactive"===document.readyState||"complete"===document.readyState?e():void document.addEventListener("DOMContentLoaded",e,!1)};
+    
+      // Render:
+      var render=function(n,e,i,t){var o=window.requestAnimationFrame,r=!1,a=function(){r&&i(),r=!1};e.addEventListener(n,function(){r||(r=!0,o(a))},!!t),window.requestAnimationFrame||(window.requestAnimationFrame=function(n){setTimeout(n,1e3/60)})};
+    
+      const ScrollVideo = function () {
+        // Select the video element:
+        const videoItem = document.getElementById('video-item');
+    
+        // Get the element window position:
+        const videoTop = videoItem.getBoundingClientRect().top + window.pageYOffset;
+        const videoBottom = videoItem.getBoundingClientRect().bottom + window.pageYOffset;
+    
+        // Get the element height:
+        const videoHeight = videoBottom - videoTop;
+    
+        // Move ratio for the timeline, lover number means slower playback:
+        const ratio = 8 / (window.innerHeight - videoHeight);
+    
+        const handlerPlay = () => {
+          // Delay the rendering 20 (0.2) percent into the viewport:
+          const delay = 0.8;
+          const windowBottom = window.pageYOffset + window.innerHeight * delay;
+    
+          if (windowBottom > videoBottom && window.pageYOffset < videoTop) {
+            const play = (windowBottom - videoBottom) * ratio;
+            videoItem.currentTime = play;
+          } else if (window.pageYOffset >= videoTop) {
+            console.log('The video is out of bounce.');
+          } else {
+            console.log('The video has not started yet.');
+          }
+        }
+    
+        // Use requestAnimationFrame for smooth playback:
+        render('scroll', window, handlerPlay);
+      }
+    
+      ready(function() {
+        ScrollVideo();
+      });
+    
+    })();
+    </script>
     
   </body>
   {% endblock content %}
