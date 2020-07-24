@@ -3,13 +3,13 @@
   <section id="home-section" class="hero">
     <div class="home-slider  owl-carousel">
       <div class="slider-item ">
-        <div class="overlay"></div>
+        <a href="{{ url_for('Social_Hub') }}"></a><div class="overlay"></div></a>
         <div class="hero-number-back">01</div> 
         <div class="case-study-title">Do more with less</div> 
         <div class="container">
           <div class="row d-md-flex no-gutters slider-text align-items-end justify-content-end" data-scrollax-parent="true">
             <div class="one-third js-fullheight order-md-last img" style='background-image:url("{{ url_for("static", filename="images/bg_1.png") }}");'>
-              <div class="overlay"></div>
+              <a href="{{ url_for('Social_Hub') }}"></a><div class="overlay"></div></a>
             </div>
             <div class="one-forth d-flex  align-items-center ftco-animate" data-scrollax=" properties: { translateY: '70%' }">
               <div class="text">
@@ -27,13 +27,13 @@
 
 
       <div class="slider-item">
-        <div class="overlay"></div>
+        <a href="{{ url_for('Social_Hub') }}"></a><div class="overlay"></div></a>
         <div class="hero-number-back">Ben</div> 
         <div class="case-study-title">I mean if can</div> 
         <div class="container">
           <div class="row d-flex no-gutters slider-text align-items-end justify-content-end" data-scrollax-parent="true">
             <div class="one-third js-fullheight order-md-last img" style='background-image:url("{{ url_for("static", filename="images/bg_2.png") }}");'>
-              <div class="overlay"></div>
+              <a href="{{ url_for('Social_Hub') }}"></a><div class="overlay"></div></a>
             </div>
             <div class="one-forth d-flex align-items-center ftco-animate" data-scrollax=" properties: { translateY: '70%' }">
               <div class="text">
@@ -56,7 +56,7 @@
       <div class="row d-flex">
         <div class="col-md-6 col-lg-5 d-flex">
           <div class="img-about img d-flex align-items-stretch">
-            <div class="overlay"></div>
+            <a href="{{ url_for('Social_Hub') }}"></a><div class="overlay"></div></a>
             <div class="img d-flex align-self-stretch align-items-center" style='background-image:url("{{ url_for("static", filename="images/bg_1.png") }}");'>
             </div>
           </div>
@@ -102,80 +102,89 @@
         </div>
       </div>
       <div class="row">
+        <a href="{{ url_for('Community_Center') }}"></a>
         <div class="col-md-4">
           <div class="project img ftco-animate d-flex justify-content-center align-items-center" style='background-image:url("{{ url_for("static", filename="images/project-4.jpg") }}");'>
-            <a href="{{ url_for('Community_Center') }}">
-            <div class="overlay"></div>
+            
+            <a href="{{ url_for('Community_Center') }}"></a><div class="overlay"></div></a>
             <div class="text text-center p-4">
               <h3><a href="{{ url_for('Community_Center') }}">Architecture &amp;  Design</a></h3>
               <span>Community Center</span>
-            </div></a>
+            </div>
           </div>
-        </div>
+        </div></a>
+        <a href="{{ url_for('Cultural_Center') }}"></a>
         <div class="col-md-8">
           <div class="project img ftco-animate d-flex justify-content-center align-items-center" style='background-image:url("{{ url_for("static", filename="images/project-5.jpg") }}");'>
-           <a href="{{ url_for('Cultural_Center') }}">
-            <div class="overlay"></div>
+           
+            <a href="{{ url_for('Cultural_Center') }}"></a><div class="overlay"></div></a>
             <div class="text text-center p-4">
               <h3>Competition Project</h3>
               <span>Cultural Center</span>
             </div>
-          </a>
+          
           </div>
         </div>
-
+      </a>
+        <a href="{{ url_for('Technocity') }}"></a>
         <div class="col-md-8">
           <div class="project img ftco-animate d-flex justify-content-center align-items-center"  style='background-image:url("{{ url_for("static", filename="images/project-1.jpg") }}");'>
-            <a href="{{ url_for('Technocity') }}">
-            <div class="overlay"></div>
+            
+            <a href="{{ url_for('Technocity') }}"></a><div class="overlay"></div></a>
             <div class="text text-center p-4">
               <h3><a href="{{ url_for('Technocity') }}">Rental Office Design</a></h3>
               <span>Technocity Center</span>
             </div
-            ></a>
+            >
           </div>
-        </div>
+        </div></a>
 
+        <a href="{{ url_for('Kindergartten') }}"></a>
         <div class="col-md-4">
           <div class="project img ftco-animate d-flex justify-content-center align-items-center" style='background-image:url("{{ url_for("static", filename="images/project-6.jpg") }}");'>
-            <a href="{{ url_for('Kindergartten') }}">
-              <div class="overlay"></div>
+            
+              <a href="{{ url_for('Kindergartten') }}"></a><div class="overlay"></div></a>
               <div class="text text-center p-4">
                 <h3><a href="{{ url_for('Kindergartten') }}">Education Facility Design</a></h3>
                 <span>Kindergartten </span>
               </div>
-              </a>
+              
             </div>
-        </div>
+        </div></a>
         
+        <a href="{{ url_for('Exhibiton_Design') }}"></a>
             <div class="col-md-4">
               <div class="project img ftco-animate d-flex justify-content-center align-items-center" style='background-image:url("{{ url_for("static", filename="images/project-2.jpg") }}");'>>
-              <a href="{{ url_for('Exhibiton_Design') }}">
-                <div class="overlay"></div>
+              
+                <a href="{{ url_for('Exhibiton_Design') }}"></a><div class="overlay"></div></a>
                 <div class="text text-center p-4">
                   <h3><a href="{{ url_for('Exhibiton_Design') }}">Exhibiton Design</a></h3>
                   <span>Museum</span>
                 </div>
-                </a>
+                
               </div>
-            </div>
-            <div class="col-md-8">
-              <div class="project img ftco-animate d-flex justify-content-center align-items-center" style='background-image:url("{{ url_for("static", filename="images/project-3.jpg") }}");'>
-              <a href="{{ url_for('Social_Hub') }}">
-                <div class="overlay"></div>
-                <div class="text text-center p-4">
-                  <h3><a href="{{ url_for('Social_Hub') }}">Social Hub</a></h3>
-                  <span>Public Building Design</span>
+            </div></a>
+
+            <a href="{{ url_for('Social_Hub') }}"></a>
+              <div class="col-md-8">
+                <div class="project img ftco-animate d-flex justify-content-center align-items-center" style='background-image:url("{{ url_for("static", filename="images/project-3.jpg") }}");'>
+                
+                  <a href="{{ url_for('Social_Hub') }}"></a><div class="overlay"></div></a>
+                  <div class="text text-center p-4">
+                    <h3><a href="{{ url_for('Social_Hub') }}">Social Hub</a></h3>
+                    <span>Public Building Design</span>
+                  </div>
+                  
                 </div>
-                </a>
               </div>
-            </div>
+            </a>
 
             
+            <a href="{{ url_for('hub') }}"></a>
         <div class="col-md-8">
           <div class="project img ftco-animate d-flex justify-content-center align-items-center"  style='background-image:url("{{ url_for("static", filename="images/402/01.jpg") }}");'>
-            <a href="{{ url_for('Technocity') }}">
-            <div class="overlay"></div>
+            
+            <a href="{{ url_for('hub') }}"></a><div class="overlay"></div></a>
             <div class="text text-center p-4">
               <h3><a href="{{ url_for('hub') }}">Transportation Hub</a></h3>
               <span>Station and Performance Theatres</span>
@@ -187,9 +196,9 @@
         <div class="col-md-4">
           <div class="project img ftco-animate d-flex justify-content-center align-items-center" style='background-image:url("{{ url_for("static", filename="images/fab/01.png") }}");'>
             <a href="{{ url_for('fab') }}">
-              <div class="overlay"></div>
+              <a href="{{ url_for('fab') }}"></a><div class="overlay"></div></a>
               <div class="text text-center p-4">
-                <h3><a href="{{ url_for('Kindergartten') }}">Pavilion Design</a></h3>
+                <h3><a href="{{ url_for('fab') }}">Pavilion Design</a></h3>
                 <span>Digital Fabrication</span>
               </div>
               </a>
