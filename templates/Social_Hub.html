@@ -1,339 +1,310 @@
+{% extends "layout.html" %}
+{% block content %}
 
-<!DOCTYPE HTML>
-<html>
-	<head>
-	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>BensonAD</title>
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<meta name="description" content="" />
-	<meta name="keywords" content="" />
-	<meta name="author" content="" />
-
-  <!-- Facebook and Twitter integration -->
-	<meta property="og:title" content=""/>
-	<meta property="og:image" content=""/>
-	<meta property="og:url" content=""/>
-	<meta property="og:site_name" content=""/>
-	<meta property="og:description" content=""/>
-	<meta name="twitter:title" content="" />
-	<meta name="twitter:image" content="" />
-	<meta name="twitter:url" content="" />
-	<meta name="twitter:card" content="" />
-
-	<!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
-    
-    <link rel="shortcut icon" type="image/x-icon" href="{{ url_for('static', filename='logo128.png') }}" />
-
-    <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900&display=swap" rel="stylesheet">
-	
-	<!-- Animate.css -->
-	<link rel="stylesheet" href="{{ url_for('static', filename='css/animate.css') }}">
-	<!-- Icomoon Icon Fonts-->
-	<link rel="stylesheet" href="{{ url_for('static', filename='css/icomoon.css') }}">
-	<!-- Bootstrap  -->
-	<link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap.css') }}">
-	<!-- Owl Carousel -->
-	<link rel="stylesheet" href="{{ url_for('static', filename='css/owl.carousel.min.css') }}">
-	<link rel="stylesheet" href="{{ url_for('static', filename='css/owl.theme.default.min.css') }}">
-	<!-- Magnific Popup -->
-	<link rel="stylesheet" href="{{ url_for('static', filename='css/magnific-popup.css') }}">
-
-	<link rel="stylesheet" href="{{ url_for('static', filename='css/style2.css') }}">
-
-
-	<!-- Modernizr JS -->
-	<script src="{{ url_for('static', filename='js/modernizr-2.6.2.min.js') }}"></script>
-	<!-- FOR IE9 below -->
-	<!--[if lt IE 9]>
-	<script src="js/respond.min.js"></script>
-	<![endif]-->
-
-	</head>
-	<body>
-
-	
+  <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
 	<div id="colorlib-page">
-		<header>
-			<div class="container">
-				<div class="row">
-					<div class="col-md-12">
-						<div class="colorlib-navbar-brand">
-							<a class="colorlib-logo" href="index.html">Benson</a>
-						</div>
-					</div>
-				</div>
-			</div>
-		</header>
+	  <section class="hero-wrap js-fullheight" style="background-position: center; background-image: url('{{ url_for('static', filename='images/402/01.jpg') }}');" data-stellar-background-ratio="0.5">
+      <div class="overlay"></div>
+      <div class="container">
+        <div class="row no-gutters slider-text js-fullheight align-items-end justify-content-center">
+          <div class="col-md-12 ftco-animate pb-5 mb-3 text-center">
+            <h1 class="mb-3 bread">Cultural Center</h1>
+            <p class="breadcrumbs"><span class="mr-2"><a href="{{ url_for('home') }}">Home <i class="ion-ios-arrow-forward"></i></a></span> <span class="mr-2"><a href="{{ url_for('home') }}">Projects <i class="ion-ios-arrow-forward"></i></a></span> <span>Cultural center <i class="ion-ios-arrow-forward"></i></span></p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="ftco-section">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 ftco-animate">
+            <h2 class="mb-3">First place ITU design together competition 2020</h2>
+            <p>The project was done as part of competion hosted by ITU university department of Civil engineering. My role in the project was as an architect. I wrked with a team to come up with the project. In a period of ten weeks we were able to do the project to completion using BIM software and other collaboration tools like BIM 360. The team had One architect, three civil engineers and one mechanical engineer</p>
+            <p>
+              <style>.embed-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; } .embed-container iframe, .embed-container object, .embed-container embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }</style><div class='embed-container'><iframe src='https://player.vimeo.com/video/409559979' frameborder='0' webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe></div>
+            </p>
+            <p>Design together is a yearly competition where students have to come together from different disciplines from architecture and engineering and try to design together using concepts like BIM and integrated design approaches. We design theis project and won first place in design together bim competition 2020 hosted by Istanbul Technical University</p>
+            <h2 class="mb-3 mt-5">The design approach</h2>
+            <p>ustainability was a thing we considered since the beginning of the design. And we tried to save a lot on energy used in heating and cooling the building by orienting the building in such a way that it gets max heating during winter and Cool during summer according to the sun position. </p>
+            <p>
+              <img src="{{ url_for('static', filename='images/402/02.jpg') }}" alt="" class="img-fluid">
+            </p>
+            <p>Quisquam esse aliquam fuga distinctio, quidem delectus veritatis reiciendis. Nihil explicabo quod, est eos ipsum. Unde aut non tenetur tempore, nisi culpa voluptate maiores officiis quis vel ab consectetur suscipit veritatis nulla quos quia aspernatur perferendis, libero sint. Error, velit, porro. Deserunt minus, quibusdam iste enim veniam, modi rem maiores.</p>
+            <p>
+              <img src="{{ url_for('static', filename='images/402/03.jpg') }}" alt="" class="img-fluid">
+            </p>
+            <p>Odit voluptatibus, eveniet vel nihil cum ullam dolores laborum, quo velit commodi rerum eum quidem pariatur! Quia fuga iste tenetur, ipsa vel nisi in dolorum consequatur, veritatis porro explicabo soluta commodi libero voluptatem similique id quidem? Blanditiis voluptates aperiam non magni. Reprehenderit nobis odit inventore, quia laboriosam harum excepturi ea.</p>
+            <p>
+              <img src="{{ url_for('static', filename='images/402/04.jpg') }}" alt="" class="img-fluid">
+            </p>
+            <p>Adipisci vero culpa, eius nobis soluta. Dolore, maxime ullam ipsam quidem, dolor distinctio similique asperiores voluptas enim, exercitationem ratione aut adipisci modi quod quibusdam iusto, voluptates beatae iure nemo itaque laborum. Consequuntur et pariatur totam fuga eligendi vero dolorum provident. Voluptatibus, veritatis. Beatae numquam nam ab voluptatibus culpa, tenetur recusandae!</p>
+            <p>
+              <img src="{{ url_for('static', filename='images/402/05.jpg') }}" alt="" class="img-fluid">
+              <img src="{{ url_for('static', filename='images/402/06.jpg') }}" alt="" class="img-fluid">
+              <img src="{{ url_for('static', filename='images/402/07.jpg') }}" alt="" class="img-fluid">
+              <img src="{{ url_for('static', filename='images/402/08.jpg') }}" alt="" class="img-fluid">
+              <img src="{{ url_for('static', filename='images/402/09.jpg') }}" alt="" class="img-fluid">
+              <img src="{{ url_for('static', filename='images/402/010.jpg') }}" alt="" class="img-fluid">
+              <img src="{{ url_for('static', filename='images/402/011.jpg') }}" alt="" class="img-fluid">
+              <img src="{{ url_for('static', filename='images/402/012.jpg') }}" alt="" class="img-fluid">
+              <img src="{{ url_for('static', filename='images/402/013.jpg') }}" alt="" class="img-fluid">
+              <img src="{{ url_for('static', filename='images/402/014.jpg') }}" alt="" class="img-fluid">
+              <img src="{{ url_for('static', filename='images/402/015.jpg') }}" alt="" class="img-fluid">
+              <img src="{{ url_for('static', filename='images/402/016.jpg') }}" alt="" class="img-fluid">
+              <img src="{{ url_for('static', filename='images/402/017.jpg') }}" alt="" class="img-fluid">
+
+            </p>
+            <p>Voluptas dolores dignissimos dolorum temporibus, autem aliquam ducimus at officia adipisci quasi nemo a perspiciatis provident magni laboriosam repudiandae iure iusto commodi debitis est blanditiis alias laborum sint dolore. Dolores, iure, reprehenderit. Error provident, pariatur cupiditate soluta doloremque aut ratione. Harum voluptates mollitia illo minus praesentium, rerum ipsa debitis, inventore?</p>
+            <div class="tag-widget post-tag-container mb-5 mt-5">
+              <div class="tagcloud">
+                <a href="#" class="tag-cloud-link">BIM</a>
+                <a href="#" class="tag-cloud-link">Architecture</a>
+                <a href="#" class="tag-cloud-link">Collaboration</a>
+                <a href="#" class="tag-cloud-link">Competition</a>
+              </div>
+            </div>
+            
+            <div class="about-author d-flex p-4 bg-dark">
+              <div class="bio mr-5">
+                <img src="{{ url_for('static', filename='images/bg_2.png') }}" alt="Image placeholder" class="img-fluid mb-4">
+              </div>
+              <div class="desc">
+                <h3>Benson Sanga</h3>
+                <p>This project was a challenge cause i had to go outside my comfort zone and collaborate with other disciplines. But it was well worth it. We won first prize and learnt alot about collaboration, project management and working as a team to meet our goals. Thanks to everyone who help us in one way or the other.</p>
+              </div>
+            </div>
+
+
+            <div class="pt-5 mt-5">
+              <h3 class="mb-5">2 Comments</h3>
+              <ul class="comment-list">
+                <li class="comment">
+                  <div class="vcard bio">
+                    <img src="{{ url_for('static', filename='images/blank-male.jpg') }}" alt="Image placeholder">
+                  </div>
+                  <div class="comment-body">
+                    <h3>John Doe</h3>
+                    <div class="meta">June 20, 2019 at 2:21pm</div>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur quidem laborum necessitatibus, ipsam impedit vitae autem, eum officia, fugiat saepe enim sapiente iste iure! Quam voluptas earum impedit necessitatibus, nihil?</p>
+                    <p><a href="#" class="reply">Reply</a></p>
+                  </div>
+                </li>
+
+                <li class="comment">
+                  <div class="vcard bio">
+                    <img src="{{ url_for('static', filename='images/blank-male.jpg') }}" alt="Image placeholder">
+                  </div>
+                  <div class="comment-body">
+                    <h3>John Doe</h3>
+                    <div class="meta">June 20, 2019 at 2:21pm</div>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur quidem laborum necessitatibus, ipsam impedit vitae autem, eum officia, fugiat saepe enim sapiente iste iure! Quam voluptas earum impedit necessitatibus, nihil?</p>
+                    <p><a href="#" class="reply">Reply</a></p>
+                  </div>
+
+                  <ul class="children">
+                    <li class="comment">
+                      <div class="vcard bio">
+                        <img src="{{ url_for('static', filename='images/blank-male.jpg') }}" alt="Image placeholder">
+                      </div>
+                      <div class="comment-body">
+                        <h3>John Doe</h3>
+                        <div class="meta">June 20, 2019 at 2:21pm</div>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur quidem laborum necessitatibus, ipsam impedit vitae autem, eum officia, fugiat saepe enim sapiente iste iure! Quam voluptas earum impedit necessitatibus, nihil?</p>
+                        <p><a href="#" class="reply">Reply</a></p>
+                      </div>
+
+
+                      <ul class="children">
+                        <li class="comment">
+                          <div class="vcard bio">
+                            <img src="{{ url_for('static', filename='images/blank-male.jpg') }}" alt="Image placeholder">
+                          </div>
+                          <div class="comment-body">
+                            <h3>John Doe</h3>
+                            <div class="meta">June 20, 2019 at 2:21pm</div>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur quidem laborum necessitatibus, ipsam impedit vitae autem, eum officia, fugiat saepe enim sapiente iste iure! Quam voluptas earum impedit necessitatibus, nihil?</p>
+                            <p><a href="#" class="reply">Reply</a></p>
+                          </div>
+
+                            <ul class="children">
+                              <li class="comment">
+                                <div class="vcard bio">
+                                  <img src="{{ url_for('static', filename='images/blank-male.jpg') }}" alt="Image placeholder">
+                                </div>
+                                <div class="comment-body">
+                                  <h3>John Doe</h3>
+                                  <div class="meta">June 20, 2019 at 2:21pm</div>
+                                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur quidem laborum necessitatibus, ipsam impedit vitae autem, eum officia, fugiat saepe enim sapiente iste iure! Quam voluptas earum impedit necessitatibus, nihil?</p>
+                                  <p><a href="#" class="reply">Reply</a></p>
+                                </div>
+                              </li>
+                            </ul>
+                        </li>
+                      </ul>
+                    </li>
+                  </ul>
+                </li>
+
+                <li class="comment">
+                  <div class="vcard bio">
+                    <img src="{{ url_for('static', filename='images/blank-male.jpg') }}" alt="Image placeholder">
+                  </div>
+                  <div class="comment-body">
+                    <h3>John Doe</h3>
+                    <div class="meta">June 20, 2019 at 2:21pm</div>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur quidem laborum necessitatibus, ipsam impedit vitae autem, eum officia, fugiat saepe enim sapiente iste iure! Quam voluptas earum impedit necessitatibus, nihil?</p>
+                    <p><a href="#" class="reply">Reply</a></p>
+                  </div>
+                </li>
+              </ul>
+              <!-- END comment-list -->
+              
+              <div class="comment-form-wrap pt-5">
+                <h3 class="mb-5">Leave a comment</h3>
+                <form action="#" class="p-5 bg-dark">
+                  <div class="form-group">
+                    <label for="name">Name *</label>
+                    <input type="text" class="form-control" id="name">
+                  </div>
+                  <div class="form-group">
+                    <label for="email">Email *</label>
+                    <input type="email" class="form-control" id="email">
+                  </div>
+                  <div class="form-group">
+                    <label for="website">Website</label>
+                    <input type="url" class="form-control" id="website">
+                  </div>
+
+                  <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea name="" id="message" cols="30" rows="10" class="form-control"></textarea>
+                  </div>
+                  <div class="form-group">
+                    <input type="submit" value="Post Comment" class="btn py-3 px-4 btn-primary">
+                  </div>
+
+                </form>
+              </div>
+            </div>
+
+          </div> <!-- .col-md-8 -->
+          <div class="col-lg-4 sidebar ftco-animate">
+            <div class="sidebar-box ftco-animate">
+            	<h3 class="heading-sidebar">Categories</h3>
+              <ul class="categories">
+                <li><a href="#">Architecture Design Design <span>(12)</span></a></li>
+                <li><a href="#">Structuraldesign <span>(22)</span></a></li>
+                <li><a href="#">Mechanical Design <span>(37)</span></a></li>
+                <li><a href="#">BIM Implementation <span>(42)</span></a></li>
+              </ul>
+            </div>
+
+            <div class="sidebar-box ftco-animate">
+              <h3 class="heading-sidebar">Tag Cloud</h3>
+              <div class="tagcloud">
+                <a href="#" class="tag-cloud-link">house</a>
+                <a href="#" class="tag-cloud-link">office</a>
+                <a href="#" class="tag-cloud-link">building</a>
+                <a href="#" class="tag-cloud-link">land</a>
+                <a href="#" class="tag-cloud-link">table</a>
+                <a href="#" class="tag-cloud-link">interior</a>
+                <a href="#" class="tag-cloud-link">exterior</a>
+                <a href="#" class="tag-cloud-link">industrial</a>
+              </div>
+            </div>
+
+            <div class="sidebar-box ftco-animate">
+              <h3 class="heading-sidebar">Paragraph</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus itaque, autem necessitatibus voluptate quod mollitia delectus aut, sunt placeat nam vero culpa sapiente consectetur similique, inventore eos fugit cupiditate numquam!</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section> <!-- .section -->
 		
-		<div id="colorlib-work">
-			<div class="container">
-				<div class="row text-center">
-					<h2 class="bold">Project 6</h2>
-				</div>
-				<div class="row">
-					<div class="col-md-12">
-						<div class="work-entry-flex animate-box js-fullheight">
-							<div class="col-three-forth js-fullheight">
-								<div class="row no-gutters">
-									<div class="col-md-12 col-md-push-10 no-gutters">
-										<div class="work-img js-fullheight" style="background-image: url('{{ url_for('static', filename='images/work-1.jpg') }}')">
-										</div>
-									</div>
-								</div>
-							</div>
-							<div class="col-one-forth js-fullheight">
-								<div class="row no-gutters">
-									<div class="col-md-12 col-md-pull-12 no-gutters">
-										<div class="display-t js-fullheight">
-											<div class="display-tc js-fullheight">
-												<div class="text-inner text-inner-right">
-													<h2><a href="work-single.html">Application and practice of creating durable images</a></h2>
-													<p>A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth.</p>
-													<p><a href="work-single.html" class="btn-view">View More</a></p>
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
 
-					<div class="col-md-12">
-						<div class="work-entry-flex animate-box js-fullheight">
-							<div class="col-three-forth js-fullheight">
-								<div class="row no-gutters">
-									<div class="col-md-12 no-gutters">
-										<div class="work-img js-fullheight" style="background-image: url('{{ url_for('static', filename='images/work-2.jpg') }}')">
-										</div>
-									</div>
-								</div>
-							</div>
-							<div class="col-one-forth js-fullheight">
-								<div class="row no-gutters">
-									<div class="col-md-12 no-gutters">
-										<div class="display-t js-fullheight">
-											<div class="display-tc js-fullheight">
-												<div class="text-inner text-inner-left">
-													<h2><a href="work-single.html">Application and practice of creating durable images</a></h2>
-													<p>A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth.</p>
-													<p><a href="work-single.html" class="btn-view">View More</a></p>
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
+    <footer class="ftco-footer ftco-section">
+      <div class="container">
+        <div class="row mb-5">
+          <div class="col-md">
+            <div class="ftco-footer-widget mb-4">
+              <h2 class="ftco-heading-2">About</h2>
+              <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+              <ul class="ftco-footer-social list-unstyled float-md-left float-lft mt-5">
+                <li class="ftco-animate"><a href="#"><span class="icon-twitter"></span></a></li>
+                <li class="ftco-animate"><a href="#"><span class="icon-facebook"></span></a></li>
+                <li class="ftco-animate"><a href="#"><span class="icon-instagram"></span></a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md">
+            <div class="ftco-footer-widget mb-4 ml-md-4">
+              <h2 class="ftco-heading-2">Links</h2>
+              <ul class="list-unstyled">
+                <li><a href="#"><span class="icon-long-arrow-right mr-2"></span>Home</a></li>
+                <li><a href="#"><span class="icon-long-arrow-right mr-2"></span>About</a></li>
+                <li><a href="#"><span class="icon-long-arrow-right mr-2"></span>Services</a></li>
+                <li><a href="#"><span class="icon-long-arrow-right mr-2"></span>Projects</a></li>
+                <li><a href="#"><span class="icon-long-arrow-right mr-2"></span>Contact</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md">
+             <div class="ftco-footer-widget mb-4">
+              <h2 class="ftco-heading-2">Services</h2>
+              <ul class="list-unstyled">
+                <li><a href="#"><span class="icon-long-arrow-right mr-2"></span>Web Design</a></li>
+                <li><a href="#"><span class="icon-long-arrow-right mr-2"></span>Web Development</a></li>
+                <li><a href="#"><span class="icon-long-arrow-right mr-2"></span>Business Strategy</a></li>
+                <li><a href="#"><span class="icon-long-arrow-right mr-2"></span>Data Analysis</a></li>
+                <li><a href="#"><span class="icon-long-arrow-right mr-2"></span>Graphic Design</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md">
+            <div class="ftco-footer-widget mb-4">
+            	<h2 class="ftco-heading-2">Have a Questions?</h2>
+            	<div class="block-23 mb-3">
+	              <ul>
+	                <li><span class="icon icon-map-marker"></span><span class="text">203 Fake St. Mountain View, San Francisco, California, USA</span></li>
+	                <li><a href="#"><span class="icon icon-phone"></span><span class="text">+2 392 3929 210</span></a></li>
+	                <li><a href="#"><span class="icon icon-envelope"></span><span class="text">info@yourdomain.com</span></a></li>
+	              </ul>
+	            </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-12 text-center">
 
-					<div class="col-md-12">
-						<div class="work-entry-flex animate-box js-fullheight">
-							<div class="col-three-forth js-fullheight">
-								<div class="row no-gutters">
-									<div class="col-md-12 col-md-push-10 no-gutters">
-										<div class="work-img js-fullheight" style="background-image: url('{{ url_for('static', filename='images/work-3.jpg') }}')">
-										</div>
-									</div>
-								</div>
-							</div>
-							<div class="col-one-forth js-fullheight">
-								<div class="row no-gutters">
-									<div class="col-md-12 col-md-pull-12 no-gutters">
-										<div class="display-t js-fullheight">
-											<div class="display-tc js-fullheight">
-												<div class="text-inner text-inner-right">
-													<h2><a href="work-single.html">Application and practice of creating durable images</a></h2>
-													<p>A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth.</p>
-													<p><a href="work-single.html" class="btn-view">View More</a></p>
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
+          </div>
+        </div>
+      </div>
+	</footer>
+</div>
+    
+  
 
-					<div class="col-md-12">
-						<div class="work-entry-flex animate-box js-fullheight">
-							<div class="col-three-forth js-fullheight">
-								<div class="row no-gutters">
-									<div class="col-md-12 no-gutters">
-										<div class="work-img js-fullheight" style="background-image: url('{{ url_for('static', filename='images/work-4.jpg') }}')">
-										</div>
-									</div>
-								</div>
-							</div>
-							<div class="col-one-forth js-fullheight">
-								<div class="row no-gutters">
-									<div class="col-md-12 no-gutters">
-										<div class="display-t js-fullheight">
-											<div class="display-tc js-fullheight">
-												<div class="text-inner text-inner-left">
-													<h2><a href="work-single.html">Application and practice of creating durable images</a></h2>
-													<p>A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth.</p>
-													<p><a href="work-single.html" class="btn-view">View More</a></p>
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
+  <!-- loader -->
+  <div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00"/></svg></div>
 
-					<div class="col-md-12">
-						<div class="work-entry-flex animate-box js-fullheight">
-							<div class="col-three-forth js-fullheight">
-								<div class="row no-gutters">
-									<div class="col-md-12 col-md-push-10 no-gutters">
-										<div class="work-img js-fullheight" style="background-image: url('{{ url_for('static', filename='images/work-5.jpg') }}')">
-										</div>
-									</div>
-								</div>
-							</div>
-							<div class="col-one-forth js-fullheight">
-								<div class="row no-gutters">
-									<div class="col-md-12 col-md-pull-12 no-gutters">
-										<div class="display-t js-fullheight">
-											<div class="display-tc js-fullheight">
-												<div class="text-inner text-inner-right">
-													<h2><a href="work-single.html">Application and practice of creating durable images</a></h2>
-													<p>A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth.</p>
-													<p><a href="work-single.html" class="btn-view">View More</a></p>
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
 
-					<div class="col-md-12">
-						<div class="work-entry-flex animate-box js-fullheight">
-							<div class="col-three-forth js-fullheight">
-								<div class="row no-gutters">
-									<div class="col-md-12 no-gutters">
-										<div class="work-img js-fullheight" style="background-image: url('{{ url_for('static', filename='images/work-6.jpg') }}')">
-										</div>
-									</div>
-								</div>
-							</div>
-							<div class="col-one-forth js-fullheight">
-								<div class="row no-gutters">
-									<div class="col-md-12 no-gutters">
-										<div class="display-t js-fullheight">
-											<div class="display-tc js-fullheight">
-												<div class="text-inner text-inner-left">
-													<h2><a href="work-single.html">Application and practice of creating durable images</a></h2>
-													<p>A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth.</p>
-													<p><a href="work-single.html" class="btn-view">View More</a></p>
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-		
-		<div id="colorlib-subscribe">
-			<div class="overlay"></div>
-			<div class="container">
-				<div class="row">
-					<div class="col-md-8 col-md-offset-2 text-center colorlib-heading animate-box">
-						<h2>Subscribe Newsletter</h2>
-						<p>Subscribe our newsletter and get latest update</p>
-					</div>
-				</div>
-				<div class="row animate-box">
-					<div class="col-md-6 col-md-offset-3">
-						<div class="row">
-							<div class="col-md-12">
-							<form class="form-inline qbstp-header-subscribe">
-								<div class="col-three-forth">
-									<div class="form-group">
-										<input type="text" class="form-control" id="email" placeholder="Enter your email">
-									</div>
-								</div>
-								<div class="col-one-third">
-									<div class="form-group">
-										<button type="submit" class="btn btn-primary">Subscribe Now</button>
-									</div>
-								</div>
-							</form>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-
-		<footer>
-			<div id="footer">
-				<div class="container">
-					<div class="row">
-						<div class="col-md-4 col-pb-sm text-center">
-							<div class="row">
-								<div class="col-md-10">
-									<h2>Address</h2>
-									<p>535 P.O.Box Mbeya <br> Tanzania</p>
-								</div>
-							</div>
-						</div>
-						<div class="col-md-4 col-pb-sm text-center">
-							<h2>Get in Touch</h2>
-							<p><a href="#">Bensonsanga@hotmail.com</a></p>
-						</div>
-						<div class="col-md-4 col-pb-sm text-center">
-							<h2>Social</h2>
-							<p class="colorlib-social-icons">
-								<a href="#"><i class="icon-facebook4"></i></a>
-								<a href="#"><i class="icon-twitter3"></i></a>
-								<a href="#"><i class="icon-googleplus"></i></a>
-								<a href="#"><i class="icon-dribbble2"></i></a>
-							</p>
-						</div>
-					</div>
-					<div class="row">
-						<div class="col-md-12 text-center">
-							<p>
-								<span class="block"><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | Thank you for checkıng out  <i class="icon-heart" aria-hidden="true"></i> my <a href="https://colorlib.com" target="_blank">Portfolio</a>
-<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --><br></span> 
-							</p>
-						</div>
-					</div>
-				</div>
-			</div>
-		</footer>
-	
-	</div>
-
-	<!-- jQuery -->
-	<script src="{{ url_for('static', filename='js/jquery.min.js') }}"></script>
-	<!-- jQuery Easing -->
-	<script src="{{ url_for('static', filename='js/jquery.easing.1.3.js') }}"></script>
-	<!-- Bootstrap -->
-	<script src="{{ url_for('static', filename='js/bootstrap.min.js') }}"></script>
-	<!-- Waypoints -->
-	<script src="{{ url_for('static', filename='js/jquery.waypoints.min.js') }}"></script>
-	<!-- Owl Carousel -->
-	<script src="{{ url_for('static', filename='js/owl.carousel.min.js') }}"></script>
-	<!-- Magnific Popup -->
-	<script src="{{ url_for('static', filename='js/jquery.magnific-popup.min.js') }}"></script>
-	<script src="{{ url_for('static', filename='js/magnific-popup-options.js') }}"></script>
-
-	<!-- Main JS (Do not remove) -->
-	<script src="{{ url_for('static', filename='js/main2.js') }}"></script>
-
-	</body>
-</html>
-
+  <script src="js/jquery.min.js"></script>
+  <script src="js/jquery-migrate-3.0.1.min.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/jquery.easing.1.3.js"></script>
+  <script src="js/jquery.waypoints.min.js"></script>
+  <script src="js/jquery.stellar.min.js"></script>
+  <script src="js/owl.carousel.min.js"></script>
+  <script src="js/jquery.magnific-popup.min.js"></script>
+  <script src="js/aos.js"></script>
+  <script src="js/jquery.animateNumber.min.js"></script>
+  <script src="js/scrollax.min.js"></script>
+  
+  <script src="js/main.js"></script>
+    
+  </body>
+  {% endblock content %}
