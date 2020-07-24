@@ -50,5 +50,13 @@ def Exhibiton_Design():
 def Social_Hub():
     return render_template('Social_Hub.html', title='Social_Hub')
 
+@app.route("/hub")
+def hub():
+    return render_template('hub.html', title='hub')
+
+@app.route("/fab")
+def fab():
+    return render_template('fab.html', title='fab')
+
 if __name__ == '__main__':
     app.run(debug=True)
