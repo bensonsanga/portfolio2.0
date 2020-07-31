@@ -16,7 +16,31 @@
                 <span class="subheading">Hello!</span>
                 <h1 class="mb-4 mt-3">I'm <span>Benson Sanga</span></h1>
                 <h2 class="mb-4">An Architect</h2>
-                <p><a href="{{ url_for('about') }}" class="btn btn-primary py-3 px-4">Hire me</a> <a href="{{ url_for('about') }}" class="btn btn-white btn-outline-white py-3 px-4">My works</a></p>
+                <p><a href="{{ url_for('about') }}" class="btn btn-primary py-3 px-4">Hire me</a> <a href=""  data-toggle="modal" data-target="#exampleModalLong" class="btn btn-white btn-outline-white py-3 px-4">My works</a></p>
+
+
+                <!-- Modal -->
+                <div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+                  <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLongTitle">Modal title</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                          <span aria-hidden="true">&times;</span>
+                        </button>
+                      </div>
+                      <div class="modal-body">
+                        <iframe src='{{ url_for("static", filename="Benson_Sanga_Resume.pdf") }}' width="600" height="780" style="border: none;"></iframe>
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary">Save changes</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+
               </div>
             </div>
           </div>
@@ -509,6 +533,9 @@
           <h2>I'm <span>Available</span> for freelancing</h2>
           <p>Thanks for checking out my site and I would like to work with you sometime</p>
           <p class="mb-0"><a href="{{ url_for('about') }}" class="btn btn-primary py-3 px-5">Hire me</a></p>
+          
+
+          
         </div>
       </div>
     </div>
